@@ -39,6 +39,76 @@
 					"response": []
 				},
 				{
+					"name": "Get All Todos (Filter)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 66b64a926d3a3e618793a9aed186320620930c90",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/todos/?id=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"todos",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Todos (Sort)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "token 66b64a926d3a3e618793a9aed186320620930c90",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/todos/?sort_by=name",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"todos",
+								""
+							],
+							"query": [
+								{
+									"key": "sort_by",
+									"value": "name"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Post Todos",
 					"request": {
 						"method": "POST",
